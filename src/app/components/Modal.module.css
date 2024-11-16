@@ -1,5 +1,3 @@
-$inner-padding: 10px;
-
 .wrapper {
   position: fixed;
   top: 0;
@@ -10,15 +8,13 @@ $inner-padding: 10px;
   width: 500px;
   height: 100px;
   background: #383838;
-  padding: $inner-padding;
+  padding: 10px;
   box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
-  gap: $inner-padding;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-
   opacity: 0;
   transform: scale(0.9);
   pointer-events: none;
@@ -26,8 +22,8 @@ $inner-padding: 10px;
 }
 
 .open {
-    opacity: 1 !important;
-    pointer-events: all !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
   transform: scale(1) !important;
 }
 
@@ -37,8 +33,8 @@ $inner-padding: 10px;
   width: 30px;
   background: #171717;
   color: #FAFAFA;
-  top: $inner-padding;
-  left: $inner-padding;
+  top: 10px;
+  left: 10px;
   border: none;
   outline: none;
   display: flex;
@@ -48,6 +44,7 @@ $inner-padding: 10px;
   cursor: pointer;
   transition: background 0.15s;
 }
+
 .closeButton:hover {
   background: #2f2f2f;
 }
@@ -58,7 +55,6 @@ $inner-padding: 10px;
   height: 100vh;
   top: 0;
   left: 0;
-
   background: black;
   opacity: 0;
   transition: opacity 0.3s;
@@ -69,3 +65,5 @@ $inner-padding: 10px;
   opacity: 0.4;
   pointer-events: all;
 }
+
+/*# sourceMappingURL=Modal.module.css.map */

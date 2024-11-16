@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: #2f2f2f;
+  width: 100%;
+}
+
+.buttonsWrapper button {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.deleteButton {
+  background: tomato;
+}
+
+.editButton {
+  background: seagreen;
+}
+
+.checkbox {
+  background: yellow;
+}
+
+/*# sourceMappingURL=Task.module.css.map */

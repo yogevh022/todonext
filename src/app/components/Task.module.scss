@@ -1,0 +1,42 @@
+$inner-gap: 10px;
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $inner-gap;
+  gap: $inner-gap;
+  background: #2f2f2f;
+  width: 100%;
+}
+
+.title {
+
+}
+
+.buttonsWrapper button {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $inner-gap;
+}
+
+.deleteButton {
+  background: tomato;
+}
+
+.editButton {
+  background: seagreen;
+}
+
+.checkbox {
+  background: yellow;
+}
