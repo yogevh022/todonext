@@ -1,0 +1,11 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1b1b1c;
+  height: 500px;
+  width: 500px;
+  overflow-y: scroll;
+}
+
+/*# sourceMappingURL=TodoList.module.css.map */
