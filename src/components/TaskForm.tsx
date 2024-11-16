@@ -30,11 +30,12 @@ const TaskForm = forwardRef<FormInputHandle>((props, ref) => {
         return null;
     }
     const { currentTaskEdit } = taskFormContext;
-    const { closeModal } = modalContext;
+    const { modalOpen, closeModal } = modalContext;
     const { addTask, updateTask } = todoListContext;
 
     const onSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        if (!modalOpen) { return; }
         if (currentTaskEdit.current !== null) {
             const newTask: TaskData = {...currentTaskEdit.current as TaskData, title: inputValue};
             updateTask(newTask);
