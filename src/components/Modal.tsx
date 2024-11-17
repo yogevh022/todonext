@@ -9,6 +9,9 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ children }) => {
     const modalContext = useContext(ModalContext);
+    // CR: this is unneccessary, if the context is null, then onClick wont work,
+    // which is a good sign for you that your doing something wrong. errors that shouldnt happen also shouldnt be suppressed
+    // they should be loud.
     if (!modalContext) {
         return null;
     }

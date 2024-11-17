@@ -34,6 +34,7 @@ interface TodoListProps {
 const TodoList: React.FC<TodoListProps> = ({ initialTasks }) => {
     const [tasks, setTasks] = React.useState(initialTasks);
     const [modalOpen, setModalOpen] = React.useState(false);
+    // this is a state, it shouldnt be a ref.
     const currentTaskEdit = useRef<TaskData | null>(null);
     const taskFormRef = useRef<FormInputHandle | null>(null);
 

@@ -1,9 +1,16 @@
 
 .main {
   background: #0a0a0a;
+  // CR: a more efficient and modern way to achieve what you tried to do here:
+  // display: grid;
+  // place-content: center;
+  // width: 100vw;
+  // height: 100vh;
+  // you dont need to set the position or the top, left, right, and bottom properties like that.
   display: flex;
   justify-content: center;
   align-items: center;
+  // CR: position fixed is generally a bad practice you should try to avoid
   position: fixed;
   top: 0;
   left: 0;
