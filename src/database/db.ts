@@ -1,3 +1,4 @@
+// since this only runs on the server, you should add 'use server'; to the top of the file.
 import TaskData from "@/types/task";
 
 class Database {

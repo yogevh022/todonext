@@ -26,6 +26,9 @@ const TaskForm = forwardRef<FormInputHandle>((props, ref) => {
     const taskFormContext = useContext(TaskFormContext);
     const modalContext = useContext(ModalContext);
     const todoListContext = useContext(TodoListContext);
+    // CR: this is unneccessary, if the context is null, then onClick wont work,
+    // which is a good sign for you that your doing something wrong. errors that shouldnt happen also shouldnt be suppressed
+    // they should be loud.
     if (!taskFormContext || !modalContext || !todoListContext) {
         return null;
     }
@@ -35,6 +38,7 @@ const TaskForm = forwardRef<FormInputHandle>((props, ref) => {
 
     const onSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        // CR: dont one line an if please.
         if (!modalOpen) { return; }
         if (currentTaskEdit.current !== null) {
             const newTask: TaskData = {...currentTaskEdit.current as TaskData, title: inputValue};
